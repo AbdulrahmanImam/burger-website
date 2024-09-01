@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    color: black;
+    font-size: large;
+    font-weight: 700;
+    scroll-behavior: smooth;
+    width: 100%;
+    
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: rgb(206, 193, 176);
+    height:50px;    
+    z-index: 999;
+}
+.navbar h1{
+    font-size: large;
+    margin-top: 10px;
+    margin-left: 60px;
+    
+  
+}
+.lists ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+.lists li{
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+.lists a{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+.lists a:hover{
+    border-bottom: .2rem solid yellow;
+}
+.home {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    height: 100vh;
+}
+.home_intro { 
+    margin-left: 60px;
+    margin-top: 300px;
+}
+.home_intro h1{
+    size: 400;
+}
+/* .container{
+    display: flex;
+    flex-direction: column;
+} */
+.home_intro p{
+    width: 30rem;
+    font-size: large;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.home_btn {
+    padding: 10px;
+    background-color: yellow;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    color:black; 
+}
+.home_png img{
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+    margin-top: 80px;
+    border-radius: 15px;
+}
+.home_png{
+    margin-right: 70px;
+    transition: .3s;
+}
+.home_png:hover{
+    transform: translateY(-10px);
+}
+.recipe{
+    /* display: grid;
+    grid-template-rows: 1fr 1fr; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    height: calc(100vh + 3rem);
+
+}
+.recipe h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.recipe_img img{
+    object-fit: cover;
+    object-position: center;
+    width: 30rem;
+     height: 30rem;
+    border-radius: 30px;
+    margin-left: 80px;
+}
+.recipe_img{
+    margin-top: 80px;
+}
+.cov{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20rem;
+}
+.whole {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    column-gap: 10px;
+    max-width: 30rem;
+    height: 36rem;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.recefimg{
+    object-fit: cover;
+    object-position: center;
+    height: 70px;
+    width: 60px;
+    border-radius: 4px;
+    margin-bottom: -5px;
+    transition: .3s;
+}
+.recefimg:hover{
+    transform: translateX(-5px);
+}
+.reff{
+    height: 20px;
+}
+
+.recefpara{
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+}
+.recef{
+    display: grid;
+    grid-template-rows: ;
+}
+
+.popular {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 10px;
+    background-color: rgb(255, 229, 197);
+    margin-right: 70px;
+    margin-left: 74 100vh;
+    border-radius: 30px;}
+.popular h1{
+    margin-top: 50px;
+}
+.title {
+    margin-bottom: 2rem;
+    margin-left: 30rem;
+    
+  
+}
+.lass{
+    display: flex ;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 15px;
+    width: 10rem;
+    cursor: pointer;
+     margin-bottom: 50px; 
+}
+.lass:hover img{
+      transform:translateY(-10px);
+}
+.lass img{
+    object-fit: cover;
+    object-position: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    transition: .3s;   
+}
+.list_popular {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 75rem;
+    margin-left: 10rem;
+    flex-direction: row;
+    row-gap: 2rem;
+    column-gap: 5rem;
+   
+}
+.delivery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    height: 100vh
+} 
+.phase{
+    margin-right: 30rem;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.phase a{
+    text-decoration: none;
+    padding: 20px;
+    background-color: yellow;
+    border-radius: 40px;
+    
+}
+.phase p {
+    width: 20rem;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.phase_png img{
+    object-fit: cover;
+    margin-top: -10px;
+    object-position: center;
+    width: 30rem;
+    border-radius: 30px;
+}
+.contact {
+    background-color: brown;
+    height: 20rem;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 30px;
+}
+.contact h1{
+    margin-left: 50%;
+    margin-bottom: 40px;
+}
+.contact_pic img{
+    object-fit: cover;
+    object-position: center;
+    width: 10rem;
+    height: 200px;
+    margin-left: 40px;
+    border-radius: 30px; 
+}
+
+.mans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: brown;
+    margin-bottom: 15px;
+}
+
+.lasts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.rest_stuff {
+    margin-right: 40px;
+    
+}
+.mono {
+    display: flex;
+    cursor: pointer;
+    margin-left: -6rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    }
+    @media screen  and (width:1377px){
+        .home_png{
+            width: 20px;
+            
+        }
+        .home_png img{
+            width: 20px;
+        }
+    }
+    .recipe{
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+        height: auto;
+        margin-top: 30rem;
+    
+    }
+    .recipe_img{
+        width: auto;
+    }
+    .cov{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .whole{
+        height: auto;
+        margin-top: 8rem;
+        margin-left: 50px;
+    }
+    .delivery{
+    margin-bottom: 10rem;
+    }
+    
